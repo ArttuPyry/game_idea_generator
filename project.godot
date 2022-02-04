@@ -10,12 +10,18 @@ config_version=4
 
 [application]
 
-config/name="GameIdeaGenerator"
-config/icon="res://icon.png"
+config/name="GIG - Game Idea Generator"
+config/description="Need new idea for a game? This app will randomize genre, dimension(3D, 2D, 2.5D) and requirmend!"
+run/main_scene="res://Scenes/main.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="GIG"
+boot_splash/image="res://Icons/controller_icon.png"
+config/icon="res://Icons/controller_icon.png"
 
 [display]
 
-window/size/width=600
+window/size/width=320
+window/size/height=320
 window/size/resizable=false
 
 [physics]
@@ -24,4 +30,6 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+2d/snapping/use_gpu_pixel_snap=true
+environment/default_clear_color=Color( 0.172549, 0.164706, 0.196078, 1 )
 environment/default_environment="res://default_env.tres"
